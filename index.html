@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider | JS</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button onclick="myVar = setInterval(slideShow, 3000)">Start Slider with Interval</button>
+            <button onclick="clearInterval(myVar)">Stop it</button>
+            <br>
+            <button onclick="myVar1 = setTimeout(slideShow, 3000)">Start Slider with Timeout</button>
+            <button onclick="clearTimeout(myVar1)">Stop it</button>
+        </header>
+        <div class="images interval">
+            <img src="./images/bg1.jpg" alt="background-image">
+            <img src="./images/bg2.jpg" alt="background-image">
+            <img src="./images/bg3.jpg" alt="background-image">
+            <img src="./images/bg4.jpg" alt="background-image">
+            <img src="./images/bg5.jpg" alt="background-image">
+            <img src="./images/bg6.jpg" alt="background-image">
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

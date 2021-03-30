@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  background-color: #4169e1;
+}
+
+.container {
+  height: 600px;
+  width: 65%;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container header {
+  background-color: rgba(60, 60, 153, 0.507);
+  font-size: large;
+  font-weight: 900;
+  padding: 20px;
+  text-align: center;
+}
+
+.container button {
+  outline: none;
+  width: 250px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgba(61, 109, 109, 0.192);
+  padding: 3px;
+  margin: 5px;
+}
+
+.container .images {
+  height: 100%;
+  width: 100%;
+}
+.images img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+  .container {
+    margin: 30px;
+    height: 500px;
+    width: 80%;
+  }
+
+  .container header {
+    font-size: 18px;
+  }
+
+  .container button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 20px;
+    height: 300px;
+    width: 80%;
+  }
+
+  .container header {
+    font-size: 12px;
+  }
+
+  .container button {
+    font-size: 10px;
+  }
+}
